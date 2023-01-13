@@ -8,7 +8,7 @@ $primary-color: #ffd700;
 }
 
 @font-face {
-    font-family: 'La Bele Aurore';
+    font-family: 'La Belle Aurore';
     src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 
@@ -18,5 +18,5 @@ $primary-color: #ffd700;
 }
 
 input, textarea {
-    font-family: 'Helvetica Neu';
+    font-family: 'Helvetica Neue', sans-serif;
 }
