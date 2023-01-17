@@ -1,0 +1,11 @@
+.about__data {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__description {
+    max-width: 90%;
+    padding-bottom: 1.2rem;
+}
