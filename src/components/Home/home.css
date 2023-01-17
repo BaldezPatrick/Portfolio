@@ -47,3 +47,36 @@
     margin-bottom: var(--mb-3);
     max-width: 400px;
 }
+
+@media screen and (max-width: 992px) {
+    .home__content {
+        column-gap: 1.25rem;
+        grid-template-columns:100px repeat(1, 1fr);
+    }
+
+    .home__subtitle {
+        margin-bottom: var(--mb-1);
+        padding-left: 3.75rem;
+    }
+
+    .home__subtitle::before {
+        width: 42px;
+    }
+
+    .home__description {
+        margin-bottom: var(--mb-2-5);
+        max-width: initial;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__content{
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
