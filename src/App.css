@@ -7,6 +7,7 @@
 }
 
 body {
+  margin: 0 4rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -16,4 +17,20 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.btn {
+  background: rgb(32, 29, 29);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 1rem;
+  width: 200px;
+}
+
+@media screen and (max-width: 561px) {
+    body {
+      margin: 0;
+    }
 }
