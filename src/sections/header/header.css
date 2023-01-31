@@ -58,3 +58,31 @@ header {
     color: var(--color-white);
     transform: translateX(-0.5rem);
 }
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-profile {
+        max-height: 35vh;
+        max-width: 60%;
+        height: 17rem;
+        width: 14rem;
+    }
+
+    .header-container p {
+        width: 100%;
+    }
+
+    .header-cta {
+        gap: 1rem;
+    }
+
+    .header-socials {
+        display: none;
+    }
+}
