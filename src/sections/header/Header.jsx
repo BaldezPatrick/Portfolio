@@ -1,13 +1,14 @@
 import React from 'react'
 import './header.css'
 import data from './data'
+import MontainPhoto from '../../assets/photo-test.jpg'
 
 const Header = () => {
   return (
     <section id="header">
       <div className="container header-container">
         <div className="header-profile">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum architecto voluptatum laboriosam quasi illo numquam rerum? Error, veritatis non!
+          <img src={MontainPhoto} alt="Mountain photo" />
         </div>
           <h3>Patrick Baldez</h3>
           <p>
