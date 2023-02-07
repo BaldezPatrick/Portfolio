@@ -3,6 +3,8 @@ import './about.css'
 import MontainPhoto from '../../assets/photo-test.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import dataAbout from './data'
+import Card from '../../components/Card'
 
 const About = () => {
   return (
@@ -15,7 +17,15 @@ const About = () => {
         </div>
         <div className="about-right">
           <h2>About me</h2>
-          <div className="about-cards"></div>
+          <div className="about-cards">
+            {dataAbout.map((item) => (
+              <Card key={item.id} className="about-card">
+                <span className="about-card-icon">{item.icon}</span>
+                <h5>{item.title}</h5>
+                <small>{item.desc}</small>
+              </Card>
+            ))}
+          </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Necessitatibus, laborum ipsum. Dolorem, laudantium? Veritatis velit
@@ -31,11 +41,11 @@ const About = () => {
             culpa laboriosam ut fugit necessitatibus. Eaque culpa sit saepe
             sequi dolorum natus?
           </p>
-        </div>
 
-        <a href={'#'} className="btn primary">
-          Download CV <FontAwesomeIcon icon={faDownload} />
-        </a>
+          <a href={'#'} className="btn primary">
+            Download CV <FontAwesomeIcon icon={faDownload} />
+          </a>
+        </div>
       </div>
     </section>
   )
