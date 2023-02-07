@@ -29,6 +29,7 @@
 
 .card.about-card {
     text-align: center;
+    transition: var(--transition);
 }
 
 .about-card-icon {
