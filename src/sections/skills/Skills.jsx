@@ -10,8 +10,8 @@ const Skills = () => {
       <div className="container skills-container">
         {
           dataSkills.map((item) => (
-            <Card key={item.id} className="service light">
-              <div className="service-icon">
+            <Card key={item.id} className="skills light">
+              <div className="skills-icon">
                 {item.icon}
               </div>
             </Card>
