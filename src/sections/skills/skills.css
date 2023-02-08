@@ -24,3 +24,16 @@
     color: var(--color-primary);
 }
 
+@media screen and (max-width: 1024px) {
+    .skills-container {
+        gap: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+}
