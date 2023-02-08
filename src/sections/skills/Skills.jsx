@@ -1,8 +1,6 @@
 import React from 'react'
 import './skills.css';
 import Card from '../../components/Card'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
 import dataSkills from './data'
 
 const Skills = () => {
