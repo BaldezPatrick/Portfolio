@@ -68,3 +68,25 @@
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
+
+@media screen and (max-width: 1024px) {
+    .portfolio-projects {
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-categories {
+        gap: .6rem;
+    }
+
+    .btn.cat-btn {
+        padding: .7rem .8rem;
+    }
+
+    .portfolio-projects {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+}
