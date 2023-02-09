@@ -6,7 +6,7 @@ const data = [
         category: "frontend",
         image: image_portfolio,
         title: "A title for project (Frontend)",
-        description: "ahushduashduahsduahsudhasudhasudhaushduahduahsduahsduahsudhausdhaushduashduahsudhasudhaushduashdauhda",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus cumque veniam consequuntur modi officiis deleniti velit mollitia architecto aperiam vero voluptatibus incidunt, quam excepturi debitis doloribus repellat harum eius.",
         demo: "https://linkedin.com",
         github: "https://github.com"
     },
@@ -15,7 +15,7 @@ const data = [
         category: "backend",
         image: image_portfolio,
         title: "A title for project A (Backend)",
-        description: "ahushduashduahsduahsudhasudhasudhaushduahduahsduahsduahsudhausdhaushduashduahsudhasudhaushduashdauhda",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus cumque veniam consequuntur modi officiis deleniti velit mollitia architecto aperiam vero voluptatibus incidunt, quam excepturi debitis doloribus repellat harum eius.",
         demo: "https://linkedin.com",
         github: "https://github.com"
     },
@@ -24,7 +24,7 @@ const data = [
         category: "frontend",
         image: image_portfolio,
         title: "A title for project B (Frontend)",
-        description: "ahushduashduahsduahsudhasudhasudhaushduahduahsduahsduahsudhausdhaushduashduahsudhasudhaushduashdauhda",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus cumque veniam consequuntur modi officiis deleniti velit mollitia architecto aperiam vero voluptatibus incidunt, quam excepturi debitis doloribus repellat harum eius.",
         demo: "https://linkedin.com",
         github: "https://github.com"
     },
@@ -33,8 +33,19 @@ const data = [
         category: "backend",
         image: image_portfolio,
         title: "A title for project C (Backend)",
-        description: "ahushduashduahsduahsudhasudhasudhaushduahduahsduahsduahsudhausdhaushduashduahsudhasudhaushduashdauhda",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus cumque veniam consequuntur modi officiis deleniti velit mollitia architecto aperiam vero voluptatibus incidunt, quam excepturi debitis doloribus repellat harum eius.",
+        demo: "https://linkedin.com",
+        github: "https://github.com"
+    },
+    {
+        id: 5,
+        category: "backend",
+        image: image_portfolio,
+        title: "A title for project C (Backend)",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus cumque veniam consequuntur modi officiis deleniti velit mollitia architecto aperiam vero voluptatibus incidunt, quam excepturi debitis doloribus repellat harum eius.",
         demo: "https://linkedin.com",
         github: "https://github.com"
     }
 ]
+
+export default data;
