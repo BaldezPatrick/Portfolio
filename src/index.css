@@ -62,8 +62,8 @@ section > h2 {
     text-align: center;
 }
 
-section > {
-    margin: 05rem auto 4rem;
+section > p {
+    margin: .5rem auto 4rem;
     text-align: center;
     width: 40%;
 }
