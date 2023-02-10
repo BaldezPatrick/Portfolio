@@ -2,7 +2,6 @@ import React from 'react'
 import {
   About,
   Contact,
-  FAQs,
   Footer,
   FloatingNav,
   Header,
@@ -19,7 +18,6 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
-      <FAQs />
       <Contact />
       <Footer />
       <FloatingNav />
