@@ -11,9 +11,9 @@ const Contact = () => {
         </p>
         <div className="container contact-container">
             {
-              dataContacts.map((contact) => {
+              dataContacts.map((contact) => (
                 <a key={contact.id} href={contact.link} target="_blank" rel="noopener norferrer">{contact.icon}</a>
-              })
+              ))
             }
         </div>
     </section>
