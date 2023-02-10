@@ -1,0 +1,31 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: fit-content;
+}
+
+.contact-container a {
+    aspect-ratio: 1/1;
+    background-color: var(--color-primary);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-1);
+    color: white;
+    display: grid;
+    font-size: 2rem;
+    place-items: center;
+    width: 5rem;
+}
+
+.contact-container a:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateX(-0.5rem);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        gap: 1.5rem;
+    }
+}
