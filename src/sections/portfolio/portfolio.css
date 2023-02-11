@@ -90,3 +90,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 415px) {
+    .portfolio-project {
+        max-width: 300px;
+    }
+}
