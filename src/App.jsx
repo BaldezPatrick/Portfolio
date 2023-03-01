@@ -9,6 +9,7 @@ import {
   Portfolio,
   Skills,
 } from './sections'
+import Theme from './theme/Theme'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <Theme />
       <FloatingNav />
     </main>
   )
