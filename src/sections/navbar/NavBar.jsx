@@ -1,10 +1,12 @@
 import React from 'react'
 import './navBar.css'
 import data from './data'
+import { useModalContext } from '../../context/modalContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPalette } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
+  const { showModalHandler } = useModalContext();
   return (
     <nav>
       <div className="container nav-container">
@@ -18,7 +20,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <button id="theme-icon">
+        <button id="theme-icon" onClick={showModalHandler}>
           <FontAwesomeIcon icon={faPalette} />
         </button>
       </div>
