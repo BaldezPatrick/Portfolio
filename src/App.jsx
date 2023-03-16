@@ -1,4 +1,5 @@
 import React from 'react'
+import { useThemeContext } from './context/themeContext'
 import {
   About,
   Contact,
@@ -12,8 +13,10 @@ import {
 import Theme from './theme/Theme'
 
 const App = () => {
+  const { themeState } = useThemeContext();
+
   return (
-    <main>
+    <main className={`${themeState.primary} ${themeState.background}`}>
       <NavBar />
       <Header />
       <About />
