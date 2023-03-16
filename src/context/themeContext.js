@@ -15,5 +15,9 @@ export const ThemeProvider = ({children}) => {
         dispatchTheme({type: buttonClassName})
     }
 
-    return <ThemeContext.Provider>{children}</ThemeContext.Provider>
+    return <ThemeContext.Provider value={{themeState, themeHandler}}>{children}</ThemeContext.Provider>
+}
+
+export const useThemeContext = () => {
+    return useContext(ThemeContext);
 }
