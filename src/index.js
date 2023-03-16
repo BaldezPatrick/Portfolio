@@ -4,12 +4,15 @@ import App from './App'
 import { ModalProvider } from './context/modalContext'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
+import { ThemeProvider } from './context/themeContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <ModalProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </ModalProvider>
+  <ThemeProvider>
+    <ModalProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ModalProvider>
+  </ThemeProvider>
 )
