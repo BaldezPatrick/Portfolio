@@ -1,8 +1,10 @@
 .card.theme-modal {
+    animation: animateModal 500ms ease-in forwards;
     background: #dedede;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, .2);
     padding: 3rem;
     position: fixed;
+    opacity: 0;
     left: 50%;
     text-align: center;
     top: 50%;
@@ -81,6 +83,12 @@
 
 .theme-background-colors .bg-2 {
     background: #111;
+}
+
+@keyframes animateModal {
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 600px) {
