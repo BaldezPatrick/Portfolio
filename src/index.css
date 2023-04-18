@@ -234,6 +234,7 @@ main.bg-2 {
     --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
     --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
     --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+    color: white;
 }
 
 main.color-6 {
