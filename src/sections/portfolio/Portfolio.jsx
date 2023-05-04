@@ -22,14 +22,15 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-        <h2>Recent Projects</h2>
-        <p>
-          Check out some of the projects I recently worked on. Use the buttons to toggle the different categories.
-        </p>
-        <div className="container portfolio-container">
-          <ProjectsCategories categories={uniqueCategories} onFilterProjects={filterProjectsHandler} />
-          <Projects projects={projects} />
-        </div>
+      <h2>Recent Projects</h2>
+      <p>Some projects below. Check them!</p>
+      <div className="container portfolio-container">
+        <ProjectsCategories
+          categories={uniqueCategories}
+          onFilterProjects={filterProjectsHandler}
+        />
+        <Projects projects={projects} />
+      </div>
     </section>
   )
 }
