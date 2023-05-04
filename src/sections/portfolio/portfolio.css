@@ -1,3 +1,9 @@
+.no-portfolio-msg {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
 .portfolio-categories {
     display: flex;
     flex-wrap: wrap;
