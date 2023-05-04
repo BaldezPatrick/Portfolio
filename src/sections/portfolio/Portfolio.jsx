@@ -29,7 +29,11 @@ const Portfolio = () => {
           categories={uniqueCategories}
           onFilterProjects={filterProjectsHandler}
         />
-        <Projects projects={projects} />
+        {projects.length === 0 ? (
+          <p className="no-portfolio-msg">Buliding...</p>
+        ) : (
+          <Projects projects={projects} />
+        )}
       </div>
     </section>
   )
