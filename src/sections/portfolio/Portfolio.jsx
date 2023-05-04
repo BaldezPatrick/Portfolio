@@ -25,14 +25,16 @@ const Portfolio = () => {
       <h2>Recent Projects</h2>
       <p>Some projects below. Check them!</p>
       <div className="container portfolio-container">
-        <ProjectsCategories
-          categories={uniqueCategories}
-          onFilterProjects={filterProjectsHandler}
-        />
         {projects.length === 0 ? (
           <p className="no-portfolio-msg">Buliding...</p>
         ) : (
-          <Projects projects={projects} />
+          <>
+            <ProjectsCategories
+              categories={uniqueCategories}
+              onFilterProjects={filterProjectsHandler}
+            />
+            <Projects projects={projects} />
+          </>
         )}
       </div>
     </section>
