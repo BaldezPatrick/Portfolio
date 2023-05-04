@@ -10,9 +10,6 @@ const Theme = () => {
     <>
       <Modal className="theme-modal">
         <h3>Customize Your Theme</h3>
-        <small>
-          Change the primary and background color to your preference.
-        </small>
         <div id="theme-primary-wrapper">
           <h5>Primary Color</h5>
           <div className="theme-primary-colors">
@@ -27,9 +24,12 @@ const Theme = () => {
         <div className="theme-background-wrapper">
           <h5>Background Color</h5>
           <div className="theme-background-colors">
-            {
-                backgroundColors.map(bColor => <BackGroundColor key={bColor.className} className={bColor.className} />)
-            }
+            {backgroundColors.map((bColor) => (
+              <BackGroundColor
+                key={bColor.className}
+                className={bColor.className}
+              />
+            ))}
           </div>
         </div>
       </Modal>
