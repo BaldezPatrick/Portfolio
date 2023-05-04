@@ -8,15 +8,19 @@ const ProjectsCategories = ({categories, onFilterProjects}) => {
         setActiveCategory(activeCat)
         onFilterProjects(activeCat)
     }
-  return (
-    <div className="portfolio-categories">
-        {
-            categories.map(category => (
-                <CategoryButton key={category} category={category} className={`btn cat-btn ${activeCategory == category ? 'primary' : 'white'}`} onChangeCategory={() => changeCategoryHandler(category)} />
-            ))
-        }
-    </div>
-  )
+
+    const buttonMapping = categories.map((category) => (
+      <CategoryButton
+        key={category}
+        category={category}
+        className={`btn cat-btn ${
+          activeCategory == category ? 'primary' : 'white'
+        }`}
+        onChangeCategory={() => changeCategoryHandler(category)}
+      />
+    ))
+
+    return <div className="portfolio-categories">{buttonMapping}</div>
 }
 
 export default ProjectsCategories
